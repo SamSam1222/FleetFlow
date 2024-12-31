@@ -1,0 +1,22 @@
+{
+    "sourceFile": "FleetFlow/FleetFlow/jazzmin.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1735587890916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1735666899011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,10 @@\n     \n     \"site_logo_classes\": \"custom-logo-size\",  # Use your custom class\n     \n     \n-    \"custom_css\": \"css/custom_jazzmin.css\",  # Path to your custom CSS file\n-    \"custom_js\": \"js/custom_jazzmin.js\",  # Path to your custom JS file\n+    \"custom_css\": \"assets/css/custom_jazzmin.css\",  # Path to your custom CSS file\n+    \"custom_js\": \"assets/js/custom_jazzmin.js\",  # Path to your custom JS file\n \n \n     # CSS classes that are applied to the logo above\n     \"site_logo_classes\": \"img-circle\",\n"
+                }
+            ],
+            "date": 1735587890916,
+            "name": "Commit-0",
+            "content": "# Admin Theme For DashBoard With The Images For Both Log In and Log Out\n\nJAZZMIN_SETTINGS = {\n    \"custom_css\": \"css/custom_jazzmin.css\",  # Link to your custom CSS file\n    \n    # title of the window (Will default to current_admin_site.site_title if absent or None)\n    \"site_title\": \"Ecommerce Admin\",\n\n    # Title on the login screen (19 chars max)\n    \"site_header\": \"EBusiness\",\n\n    # Title on the brand (19 chars max)\n    \"site_brand\": \"EBusiness\",\n\n    # Logo to use for your site, must be present in static files\n    \"site_logo\": \"/images/2.jpg\",\n\n    \n\n    # Logo to use for login form\n    # \"login_logo\": \"/img/3 copy.jpg\",\n    \n    \"site_logo_classes\": \"custom-logo-size\",  # Use your custom class\n    \n    \n    \"custom_css\": \"css/custom_jazzmin.css\",  # Path to your custom CSS file\n    \"custom_js\": \"js/custom_jazzmin.js\",  # Path to your custom JS file\n\n\n    # CSS classes that are applied to the logo above\n    \"site_logo_classes\": \"img-circle\",\n\n    # Welcome text on the login screen\n    \"welcome_sign\": \"Welcome to the eBusiness\",\n    \n\n    # Copyright on the footer\n    \"copyright\": \"EBusiness Coorperation\",\n    \n    \n    \n    # Search model\n    \"search_model\": [\"auth.User\", \"auth.Group\"],\n\n    # Field for user avatar\n    \"user_avatar\": \"profile.avatar\",  # Assuming 'avatar' is the field name in your Profile model\n\n    # Top Menu\n    \"topmenu_links\": [\n        {\"name\": \"Home\", \"url\": \"/\", \"permissions\": [\"auth.view_user\"]},\n        {\"name\": \"Support\", \"url\": \"https://github.com/farridav/django-jazzmin/issues\", \"new_window\": True},\n        {\"model\": \"auth.User\"},\n        {\"app\": \"books\"},\n    ],\n\n    # User Menu Links\n    \"usermenu_links\": [\n        {\"name\": \"Support\", \"url\": \"https://github.com/farridav/django-jazzmin/issues\", \"new_window\": True},\n        {\"model\": \"auth.user\"}\n    ],\n\n    # Side Menu\n    \"show_sidebar\": True,\n    \"navigation_expanded\": True,\n    \"hide_apps\": [],\n    \"hide_models\": [],\n    \"order_with_respect_to\": [\"auth\", \"books\", \"books.author\", \"books.book\"],\n\n    # Custom Links for Side Menu\n    \"custom_links\": {\n        \"books\": [{\n            \"name\": \"Make Messages\",\n            \"url\": \"make_messages\",\n            \"icon\": \"fas fa-comments\",\n            \"permissions\": [\"books.view_book\"]\n        }]\n    },\n\n    # Custom Icons\n    \"icons\": {\n        \"auth\": \"fas fa-users-cog\",\n        \"auth.user\": \"fas fa-user\",\n        \"auth.Group\": \"fas fa-users\",\n    },\n    \"default_icon_parents\": \"fas fa-chevron-circle-right\",\n    \"default_icon_children\": \"fas fa-circle\",\n\n    # Related Modal\n    \"related_modal_active\": True,\n\n    # UI Tweaks\n    \"use_google_fonts_cdn\": True,\n    \"show_ui_builder\": False,\n\n    # Change View\n    \"changeform_format\": \"horizontal_tabs\",\n    \"changeform_format_overrides\": {\"auth.user\": \"collapsible\", \"auth.group\": \"vertical_tabs\"},\n}\n\nJAZZMIN_SETTINGS[\"show_ui_builder\"] = True\n"
+        }
+    ]
+}

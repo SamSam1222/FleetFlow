@@ -1,0 +1,26 @@
+{
+    "sourceFile": "FleetFlow/static/css/custom_jazzmin.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1735588434200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1735588460947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,5 +51,6 @@\n \n img {\n \n     border-radius: 50%; /* Ensure the image is circular */\n+    height: 10px;\n }\n"
+                },
+                {
+                    "date": 1735588469123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,6 +51,6 @@\n \n img {\n \n     border-radius: 50%; /* Ensure the image is circular */\n-    height: 10px;\n+    height: 50px;\n }\n"
+                }
+            ],
+            "date": 1735588434200,
+            "name": "Commit-0",
+            "content": "/* Target only the specific login form card */\n.card-body.auth-card, .login-box .card {\n    background-color: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent black */\n    border-radius: 10px !important;\n    color: #ffffff !important; /* White text */\n    padding: 0px !important;\n}\n\n/* Media query for mobile view */\n@media (max-width: 768px) {\n    /* Target the login card only */\n    .card-body.auth-card, .login-box .card {\n        max-width: 75% !important; /* Narrower card */\n        margin: 0 auto !important; /* Center the card */\n        padding: 0px !important; /* Smaller padding */\n        border-radius: 8px !important;\n    }\n\n    /* Smaller input fields */\n    .card-body.auth-card input.form-control, .login-box .card input {\n        font-size: 14px !important;\n        padding: 8px !important;\n    }\n\n    /* Smaller buttons */\n    .card-body.auth-card button, .login-box .card button {\n        font-size: 14px !important;\n        padding: 8px !important;\n    }\n}\n\n\n\n/* Add the video as a full-screen background */\n#background-video {\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    object-fit: cover;\n    z-index: -1;\n}\n\n#background-video source {\n    display: block;\n}\n\n\n\n\nimg {\n\n    border-radius: 50%; /* Ensure the image is circular */\n}\n"
+        }
+    ]
+}

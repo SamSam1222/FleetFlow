@@ -1,0 +1,18 @@
+{
+    "sourceFile": "FleetFlow/requirements.txt",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1735586772945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1735586772945,
+            "name": "Commit-0",
+            "content": "asgiref==3.8.1\nDjango==4.2.17\ndjango-jazzmin==3.0.1\nsqlparse==0.5.3\ntyping_extensions==4.12.2\nbeautifulsoup4==4.12.3\ncrispy-bootstrap5==2024.10\ndjango-bootstrap-v5==1.0.11\ndjango-crispy-forms==2.3\ndjango-js-asset==2.2.0\ndjango-taggit==6.1.0\ndjango-widget-tweaks==1.5.0\ngunicorn==23.0.0\nidna==3.6\npackaging==24.2\npillow==11.0.0\nsoupsieve==2.6\nwhitenoise==6.8.2\n"
+        }
+    ]
+}

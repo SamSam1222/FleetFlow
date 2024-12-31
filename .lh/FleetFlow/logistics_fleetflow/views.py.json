@@ -1,0 +1,30 @@
+{
+    "sourceFile": "FleetFlow/logistics_fleetflow/views.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1735586975297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1735589811041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,4 +3,10 @@\n \n def home(request):\n     routes = Route.objects.all()\n     return render(request, 'logistics/home.html', {'routes': routes})\n+\n+def about(request):\n+    return render(request, 'logistics/about.html')\n+\n+def services(request):\n+    return render(request, 'logistics/services.html')\n"
+                },
+                {
+                    "date": 1735590610076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,15 @@\n \n def about(request):\n     return render(request, 'logistics/about.html')\n \n-def services(request):\n-    return render(request, 'logistics/services.html')\n+def air_services(request):\n+    return render(request, 'logistics/air_services.html')\n+\n+def road_services(request):\n+    return render(request, 'logistics/road_services.html')\n+\n+def ocean_services(request):\n+    return render(request, 'logistics/ocean_services.html')\n+\n+def all_services(request):\n+    return render(request, 'logistics/all_services.html')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1735591588317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,12 @@\n def ocean_services(request):\n     return render(request, 'logistics/ocean_services.html')\n \n def all_services(request):\n-    return render(request, 'logistics/all_services.html')\n\\ No newline at end of file\n+    return render(request, 'logistics/all_services.html')\n+\n+\n+def price_table(request):\n+    return render(request, 'logistics/price_table.html')\n+\n+def team(request):\n+    return render(request, 'logistics/team.html')\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1735586975297,
+            "name": "Commit-0",
+            "content": "from django.shortcuts import render\nfrom .models import Route\n\ndef home(request):\n    routes = Route.objects.all()\n    return render(request, 'logistics/home.html', {'routes': routes})\n"
+        }
+    ]
+}

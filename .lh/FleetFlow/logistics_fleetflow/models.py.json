@@ -1,0 +1,18 @@
+{
+    "sourceFile": "FleetFlow/logistics_fleetflow/models.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1735586439210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1735586439210,
+            "name": "Commit-0",
+            "content": "from django.db import models\n\nclass Vehicle(models.Model):\n    name = models.CharField(max_length=100)\n    registration_number = models.CharField(max_length=50, unique=True)\n    capacity = models.PositiveIntegerField(help_text=\"Capacity in kilograms\")\n    available = models.BooleanField(default=True)\n\n    def __str__(self):\n        return self.name\n\nclass Route(models.Model):\n    start_location = models.CharField(max_length=100)\n    end_location = models.CharField(max_length=100)\n    distance = models.FloatField(help_text=\"Distance in kilometers\")\n\n    def __str__(self):\n        return f\"{self.start_location} to {self.end_location}\"\n\nclass Delivery(models.Model):\n    item_name = models.CharField(max_length=200)\n    weight = models.FloatField(help_text=\"Weight in kilograms\")\n    vehicle = models.ForeignKey(Vehicle, on_delete=models.CASCADE)\n    route = models.ForeignKey(Route, on_delete=models.CASCADE)\n    delivery_date = models.DateField()\n    status = models.CharField(\n        max_length=50,\n        choices=[\n            ('Pending', 'Pending'),\n            ('In Progress', 'In Progress'),\n            ('Delivered', 'Delivered'),\n        ],\n        default='Pending'\n    )\n\n    def __str__(self):\n        return self.item_name\n"
+        }
+    ]
+}

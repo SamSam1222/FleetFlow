@@ -1,0 +1,22 @@
+{
+    "sourceFile": "FleetFlow/static/js/custom_jazzmin.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1735588306055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1735588353230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             // Mobile view: small screen (video for mobile)\n             videoSource.src = \"/static/videos/Logistics Intro Video.mp4\";  // Mobile video path\n         } else {\n             // Large screen: bigger screen (video for larger devices)\n-            videoSource.src = \"/static/Logistics Intro Video.mp4\";  // Desktop video path\n+            videoSource.src = \"/static/videos/Logistics Intro Video.mp4\";  // Desktop video path\n         }\n \n         videoSource.type = \"video/mp4\";\n \n"
+                }
+            ],
+            "date": 1735588306055,
+            "name": "Commit-0",
+            "content": "// Wait for the DOM to load\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n    // Check if we are on the login page\n    const loginContainer = document.querySelector(\".login-box\");\n\n    if (loginContainer) {\n        // Inject the video into the body\n        const video = document.createElement(\"video\");\n        video.autoplay = true;\n        video.muted = true;\n        video.loop = true;\n        video.id = \"background-video\";\n\n        // Check screen size and load different video\n        const videoSource = document.createElement(\"source\");\n        if (window.innerWidth < 768) {\n            // Mobile view: small screen (video for mobile)\n            videoSource.src = \"/static/videos/Logistics Intro Video.mp4\";  // Mobile video path\n        } else {\n            // Large screen: bigger screen (video for larger devices)\n            videoSource.src = \"/static/Logistics Intro Video.mp4\";  // Desktop video path\n        }\n\n        videoSource.type = \"video/mp4\";\n\n        // Append the source to the video\n        video.appendChild(videoSource);\n\n        // Style the video\n        video.style.position = \"fixed\";\n        video.style.top = \"0\";\n        video.style.left = \"0\";\n        video.style.width = \"100vw\";\n        video.style.height = \"100vh\";\n        video.style.objectFit = \"cover\";\n        video.style.zIndex = \"-1\";\n\n        // Inject the video into the body\n        document.body.prepend(video);\n    }\n});\n\n\n\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n    const avatarUrl = document.querySelector(\"#user-tools img\"); // Check for existing user image\n\n    if (!avatarUrl) {\n        // Default to a placeholder if the avatar isn't found\n        const avatarContainer = document.querySelector(\"#user-tools\");\n        if (avatarContainer) {\n            const avatarImage = document.createElement(\"img\");\n            avatarImage.src = \"/path/to/default-avatar.png\"; // Replace with your default avatar path\n            avatarImage.alt = \"User Avatar\";\n            avatarImage.style.width = \"30px\";\n            avatarImage.style.height = \"30px\";\n            avatarImage.style.borderRadius = \"50%\";\n            avatarImage.style.marginRight = \"10px\";\n            avatarContainer.prepend(avatarImage);\n        }\n    }\n});\n\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n    const userAvatar = document.querySelector(\".user-avatar\"); // Adjust selector if needed\n    if (userAvatar && userAvatar.dataset.avatarUrl) {\n        userAvatar.src = userAvatar.dataset.avatarUrl;\n    }\n});\n"
+        }
+    ]
+}
