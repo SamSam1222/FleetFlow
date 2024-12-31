@@ -25,7 +25,7 @@ FleetFlow is a Django-based transport logistics application designed to simplify
 ### 2. Set Up Virtual Environment
 Create and activate a virtual environment:
 ```bash
-python -m venv velvet_aura_env
+python -m venv env
 source env/bin/activate  # On Windows, use FleetFlow\Scripts\activate
 ```
 
