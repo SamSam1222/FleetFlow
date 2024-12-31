@@ -20,7 +20,7 @@ FleetFlow is a Django-based transport logistics application designed to simplify
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/FleetFlow.git
-   cd transvoyage
+   cd FleetFlow
    ```
 ### 2. Set Up Virtual Environment
 Create and activate a virtual environment:
